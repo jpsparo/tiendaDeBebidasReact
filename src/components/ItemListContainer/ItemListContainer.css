@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.itemlist-container {
+  background: radial-gradient(circle at top, #111, #000);
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.itemlist-container h2 {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.itemlist-container h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 10px auto 0;
+  opacity: 0.6;
+}
+
+.loading {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+}

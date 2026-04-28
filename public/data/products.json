@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Whisky Johnnie Walker",
+    "description": "Whisky escocés etiqueta negra",
+    "price": 25000,
+    "image": "/img/whisky.webp"
+  },
+  {
+    "id": 2,
+    "name": "Cerveza Heineken",
+    "description": "Lata 473ml",
+    "price": 1800,
+    "image": "/img/cerveza.webp"
+  },
+  {
+    "id": 3,
+    "name": "Fernet Branca",
+    "description": "Botella 750ml",
+    "price": 12000,
+    "image": "/img/fernet.webp"
+  }
+]
