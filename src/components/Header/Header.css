@@ -32,6 +32,20 @@
   letter-spacing: 2px;
 }
 
+.logo span {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
 .header-actions .btn {
   background: #fff;
   color: #000;
@@ -40,6 +54,8 @@
   border-radius: 20px;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .header-actions .btn:hover {

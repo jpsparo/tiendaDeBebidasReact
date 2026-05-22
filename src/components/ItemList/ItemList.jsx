@@ -1,5 +1,6 @@
 import Item from "../Item/Item";
 import "./ItemList.css";
+import { Link } from "react-router-dom";
 
 export default function ItemList({ products }) {
   if (!products.length) {
@@ -9,7 +10,16 @@ export default function ItemList({ products }) {
   return (
     <div className="products-container">
       {products.map((product) => (
-        <Item key={product.id} {...product} />
+        <Item key={product.id} {...product}>
+
+          <Link
+            to={`/product/${product.id}`}
+            className="btn detail-btn"
+          >
+            Ver detalle
+          </Link>
+
+        </Item>
       ))}
     </div>
   );

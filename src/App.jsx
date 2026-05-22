@@ -1,7 +1,12 @@
+import { Route, Routes } from "react-router-dom";
 import './App.css'
+import Count from "./components/Count/Count";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import CartView from "./components/Cart/CartView";
+
 
 function App() {
 
@@ -9,7 +14,11 @@ function App() {
     <>
       <Header />
        <main>
-        <ItemListContainer />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/product/:id" element={<ItemDetailContainer />} />
+          <Route path="/carrito" element={<CartView />} />
+        </Routes>
       </main>
       <Footer />
     </>

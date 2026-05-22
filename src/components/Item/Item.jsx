@@ -1,13 +1,16 @@
 import "./Item.css";
 
-export default function Item({ name, description, price, image }) {
+const Item = ({ name, description, price, image, children }) => {
   return (
     <article className="card">
       <img src={image} alt={`foto de ${name}`} />
       <h3>{name}</h3>
       <p>{description}</p>
       <p className="price">${price}</p>
-      <button className="buy-btn">Comprar</button>
+
+      {children}
+
     </article>
   );
 }
+export default Item

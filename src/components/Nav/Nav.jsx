@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Nav.css';
 import { useState } from 'react';
 
@@ -11,10 +12,10 @@ export default function Nav() {
       </div>
 
       <ul className={open ? 'nav-links active' : 'nav-links'}>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><Link to={"/"}>Inicio</Link></li>
+        <li><Link to={"/"}>Productos</Link></li>
+        <li><Link to={"/ofertas"}>Ofertas</Link></li>
+        <li><Link to={"/contacto"}>Contacto</Link></li>
       </ul>
     </nav>
   );
